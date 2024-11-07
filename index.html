@@ -3,6 +3,14 @@
  <title> Borkowski 3F</title>
 
  <script language="JavaScript">
+function WinOpen_zad1() 
+ {
+window.open("zad1_bork.html","okienko_z1","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
+function WinOpen_zad2() 
+ {
+window.open("zad2_bork.html","okienko_z2","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
+ }
  function WinOpen_zad3() 
  {
 window.open("zad3_bork.html","okienko_z3","toolbar=no,directories=no,menubar=no,height=380,width=160,top=200,left=200");
@@ -23,6 +31,10 @@ function okno_zamknij()
  </head>
 <body>
  <form>
+<input type="button_z1" name="zadanie1" value="zad1_bork" onclick="WinOpen_zad1(' ')">
+<input type="button_z2" name="zadanie2" value="zad2_bork" onclick="WinOpen_zad2(' ')">
+
+
  <input type="button_z3" name="zadanie3" value="zad3_bork" onclick="WinOpen_zad3(' ')">
  <input type="button_z4" name="zadanie4" value="zad4_bork" onclick="WinOpen_zad4(' ')">
   <input type="button_z5" name="zadanie5" value="zad5_bork" onclick="WinOpen_zad5(' ')">
