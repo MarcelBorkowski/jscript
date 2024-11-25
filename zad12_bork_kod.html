@@ -1,0 +1,28 @@
+<textarea>
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div id="strona" style="color:green;font-size:50px;">
+        <script language="JavaScript">
+            let d1_bor = prompt("data 1(d1_bor):", "");
+            let g1_bor = prompt("godzina 1 (g1_bor):", "");
+            let d2_bor = prompt("data 2 (d2_bor):", "");
+            let g2_bor = prompt("godzina 2 (g2_bor):", "");
+
+            let d1 = parseInt(d1_bor);
+            let g1 = parseInt(g1_bor);
+            let d2 = parseInt(d2_bor);
+            let g2 = parseInt(g2_bor);
+
+            let iloscsek = ((d1 - d2) * 24 * 60 * 60) + ((g1 - g2) * 60 * 60);
+            document.getElementById("strona").innerHTML = "Ilość sekund: " + iloscsek + " sekund";
+        </script>
+    </div>
+</body>
+
+</html>
+  </textarea>
