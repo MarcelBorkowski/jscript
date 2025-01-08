@@ -1,0 +1,64 @@
+<html> 
+<head> 
+ <script language="JavaScript">
+ var xa_bor=
+function AB_bor(xa,ya,xb,yb)
+{
+xa_bor=parseFloat(xa)
+ ya_bor=parseFloat(ya)
+xb_bor=parseFloat(xb)
+ yb_bor=parseFloat(yb)
+
+}
+function BC_bor(xb,yb,xc,yc)
+{
+xb_bor=parseFloat(xb)
+ yb_bor=parseFloat(yb)
+ xc_bor=PerseFloat(xc)
+yc_bor=PerseFloat(yc)
+}
+function AC_bor(xa,ya,xc,yc)
+{
+xa_bor=parseFloat(xa)
+ ya_bor=parseFloat(ya)
+ xc_bor=PerseFloat(xc)
+yc_bor=PerseFloat(yc)
+
+}
+
+ </script>
+</head> 
+<body> 
+tworzenie trójkąta
+<br> <br>
+<form name="formularz" action="..."; onsubmit="AB_smu(this.pierwszy.value,this.drugi.value,this.trzeci.value,this.czwarty.value); 
+BC_bor(this.trzeci.value,this.czwarty.value,this.piąty.value,this.szósty.value);
+AC_bor(this.pierwszy.value,this.drugi.value,this.piąty.value,this.szósty.value);return false"> 
+ Bok |AB|<br><br>
+ Podaj xa=
+ <input size="6" name="pierwszy">
+ Podaj ya=
+ <input size="6" name="drugi">
+ <br><br>
+Bok |BC|<br> <br>
+ Podaj xb=
+ <input size="6" name="trzeci">
+ Podaj yb=
+ <input size="6" name="czwarty">
+ <br><br>
+Bok |AC|<br> <br>
+ Podaj xc=
+ <input size="6" name="piąty">
+ Podaj yc=
+ <input size="6" name="szósty">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ 
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body> 
+</html>
