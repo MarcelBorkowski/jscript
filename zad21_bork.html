@@ -7,9 +7,9 @@ function V(r,h)
  r_liczba=parseFloat(r)
  h_liczba=parseFloat(h)
  V_wynik=Math.PI*r_liczba*r_liczba*h_liczba
- document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); /* na dokument */
- alert("V="+V_wynik.toFixed(2)+" cm^3"); /*do okna Alert */
- pokaz1.innerHTML="V="+V_wynik.toFixed(2)+" cm^3"+"<br>"; /* do tabeli */
+ document.getElementsByName('obj')[0].value=V_wynik.toFixed(2); 
+ alert("V="+V_wynik.toFixed(2)+" cm^3"); 
+ pokaz1.innerHTML="V="+V_wynik.toFixed(2)+" cm^3"+"<br>"; 
 29
 }
 function Pc(r,h)
@@ -24,7 +24,7 @@ function Pc(r,h)
  </script>
 </head> 
 <body> 
-Pobliczanie V i Pc walca
+obliczanie V i Pc walca
 <br> <br>
 <form name="formularz" action="..." onsubmit="V(this.promien.value,this.wysokosc.value); 
 Pc(this.promien.value,this.wysokosc.value);return false"> 
