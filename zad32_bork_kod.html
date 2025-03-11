@@ -1,0 +1,37 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function samochod(jaki_samochod_b,kolor_b,rocznik_b,stan_b)
+{
+this.samochod=jaki_samochod_b;
+this.kolor=kolor_b;
+this.rocznik=rocznik_b;
+this.stan=stan_b;
+}
+ samochodborkowski.prototype.pokaz_borkowski = function () 
+ {
+ alert(this.samochod + ' ' + this.kolor+ ' ' + this.rocznik+ ' ' + this.stan);
+ };
+var samochod1 = new samochodborkowski("audi", "czarny", "2010", "nowy"); 
+var samochod2= new samochodborkowski("bmw", "biały", "2011", "nowy");
+var samochod3 = new samochodborkowski("kia","czerwony","2020", "nowy");
+  
+samochod1.pokaz_borkowski();
+samochod2.pokaz_borkowski(); 
+samochod3.pokaz_borkowski(); 
+ 
+  
+ document.write("dostęp do właściwości"+"<br>");
+  
+ document.write("samochod 1: "+" "+samochod1.samochod+" "+samochod1.kolor+" "+samochod1.rocznik+" "+samochod1.stan+"<br>");
+  document.write("samochod 2: "+" "+samochod2.samochod+" "+samochod2.kolor+" "+samochod1.rocznik+" "+samochod1.stan+"<br>");
+    document.write("samochod 3: "+" "+samochod3.samochod+" "+samochod1.kolor+" "+samochod1.rocznik+" "+samochod1.stan+"<br>");
+
+  
+ </script> 
+ </head>
+<body>
+<br>
+ programowanie obiektowe 
+</body>
+</html>
