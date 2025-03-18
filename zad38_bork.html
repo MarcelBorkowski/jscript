@@ -60,14 +60,14 @@ p {
    "<font color=blue size=5;>! zaprzeczenie x=3 y=4 !(x==y) wynik-->prawda</font>" + "<br>";
   }
  else if (opcja == 25) {
-  let przedz_bor = prompt("podaj liczbę: ", "");
-  let przedz = parseFloat(przedz_bor);
+  let przedzial_bor = prompt("podaj liczbę: ", "");
+  let przedzial = parseFloat(przedzial_bor);
   
   let wyp_bor = ""; 
 
   wyp_bor += "<font color=green size=7>Jesteś w opcji 25 -->Przedział";
 
-  if (przedz >= 9 && przedz <= 16) 
+  if (przedzial >= 9 && przedzial <= 16) 
   {
     wyp_bor += "<br>Liczba należy do przedziału";
   } 
@@ -80,14 +80,14 @@ p {
   document.getElementById("opcje").innerHTML = wyp_bor;
 }
 else if (opcja == 79) {
-  let przedz2_bor = prompt("podaj liczbę: ", "");
-  let przedz2 = parseFloat(przedz2_bor);
+  let przedzial2_bor = prompt("podaj liczbę: ", "");
+  let przedzial2 = parseFloat(przedzial2_bor);
   
   let wyp2_bor = ""; 
 
   wyp2_bor += "<font color=green size=7>Jesteś w opcji 79 -->Przedział";
 
-  if (przedz2 < 9 || przedz2 >= 16) 
+  if (przedzial2 < 9 || przedzial2 >= 16) 
   {
     wyp2_bor += "<br>Liczba należy do przedziału";
   } 
