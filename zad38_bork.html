@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: silver; 
+}
+p {
+  color: green;
+  font-size: 41px;
+}
+#menu {
+  color: red;
+  font-size: 41px;
+}
+
+</style>
+</head>
+<body>
+
+<p id="nazwisko">Moje nazwisko to: Marcel Borkowski</p>
+<p id="oblicz"></p>
+<a id="menu"></a>
+<br><br>
+<input type="button" name="wybór opcji" value="wybór opcji" onclick="opcja_smu('')">
+<br><br>
+<a id="opcje"> </a>
+<script>
+  const imie_bor = "Marcel";
+  const nazwisko_bor = "Borkowski";
+  
+  const dur_bor = 29 + 50;
+  const liczba1_bor = imie_bor.length;
+  const liczba2_bor = liczba1_bor + 7;
+  const liczba3_bor = nazwisko_bor.length;
+  const liczba4_bor = liczba3_bor + 4;
+  const lln_bor = liczba3_bor + 20;
+
+  document.getElementById("oblicz").innerHTML = 
+    "liczba1 = " + liczba1_bor + "<br>" +
+    "liczba2 = " + liczba1_bor + " + 7 = " + liczba2_bor + "<br>" +
+    "liczba3 = " + liczba3_bor + "<br>" +
+    "liczba4 = " + liczba3_bor + " + 4 = " + liczba4_bor + "<br>";
+	
+  document.getElementById("menu").innerHTML = 
+	"------------MENU------------" + "<br>" +
+	liczba1_bor + "-wyświetlanie teorii o operatorach logicznych" + "<br>" +
+	lln_bor + "- sprawdzanie czy liczba należy do przedziału (od " + liczba1_bor + "; do" + liczba2_bor + "]" + "<br>" +
+	dur_bor + "- czy liczba należy do przedziału (-oo ; " + liczba1_bor + ")  lub [" + liczba2_bor + " ; +oo))";
+	
+	 function opcja_bor() {
+            let opcja = prompt("podaj opcję= ","");	
+			
+   if(opcja==9)
+  {
+   document.getElementById("opcje").innerHTML = 
+   "<font color=green size=7;>Jesteś w opcji 9 -->teoria</font>" + "<br>" + 
+   "<font color=blue size=5;>&& i x=3 y=4 (x<0 && y>2) wynik-->prawda</font>" + "<br>" +
+   "<font color=blue size=5;>|| lub x=3 y=4 (x==8 || y==6) wynik-->fałsz</font>" + "<br>" +
+   "<font color=blue size=5;>! zaprzeczenie x=3 y=4 !(x==y) wynik-->prawda</font>" + "<br>";
+  }
+ else if (opcja == 25) {
+  let przedz_bor = prompt("podaj liczbę: ", "");
+  let przedz = parseFloat(przedz_bor);
+  
+  let wyp_bor = ""; 
+
+  wyp_bor += "<font color=green size=7>Jesteś w opcji 25 -->Przedział";
+
+  if (przedz >= 9 && przedz <= 16) 
+  {
+    wyp_bor += "<br>Liczba należy do przedziału";
+  } 
+  else 
+  {
+    wyp_bor += "<br>Liczba nie należy do przedziału";
+  }
+  wyp_bor += "</font><br>"; 
+
+  document.getElementById("opcje").innerHTML = wyp_bor;
+}
+else if (opcja == 79) {
+  let przedz2_bor = prompt("podaj liczbę: ", "");
+  let przedz2 = parseFloat(przedz2_bor);
+  
+  let wyp2_bor = ""; 
+
+  wyp2_bor += "<font color=green size=7>Jesteś w opcji 79 -->Przedział";
+
+  if (przedz2 < 9 || przedz2 >= 16) 
+  {
+    wyp2_bor += "<br>Liczba należy do przedziału";
+  } 
+  else 
+  {
+    wyp2_bor += "<br>Liczba nie należy do przedziału";
+  }
+  wyp2_bor += "</font><br>"; 
+
+  document.getElementById("opcje").innerHTML = wyp2_bor;
+}
+
+else
+{
+  document.getElementById("opcje").innerHTML = 
+  "<font color=red size=7>nie ma takiej opcji</font>";
+}
+
+}
+
+</script>
+
+</body>
+</html>
