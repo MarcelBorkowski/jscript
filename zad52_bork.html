@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Rysowanie prostokąta</title>
+  <style>
+    body {
+      font-family: monospace;
+      white-space: pre;
+      margin-top: 2cm;
+    }
+    .nazwisko { color: red; font-size: 18px; }
+    .temat { color: blue; font-size: 16px; margin-top: 5mm; }
+  </style>
+</head>
+<body>
+
+  <div class="nazwisko">borkowski</div>
+  <div class="temat">Użycie pętli for do rysowania w trybie tekstowym</div>
+
+  <script>
+  
+    var nazwisko = "borkowski";  
+    var imie = "marcel";         
+
+  
+    var a = (nazwisko.length % 4) + 5;     
+    var b = (imie.length % 6) + 20;        
+
+
+    for (var i = 0; i < b; i++) {
+      document.write("*");
+    }
+    document.write("<br>");
+
+   
+    for (var i = 0; i < a - 2; i++) {
+      document.write("*");
+      for (var j = 0; j < b - 2; j++) {
+        document.write("&nbsp;");
+      }
+      document.write("*<br>");
+    }
+
+  
+    for (var i = 0; i < b; i++) {
+      document.write("*");
+    }
+  </script>
+
+</body>
+</html>
